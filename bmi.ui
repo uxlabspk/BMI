@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bmi</class>
+ <widget class="QMainWindow" name="bmi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>176</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BMI Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2f343f;
+color: rgb(246, 245, 244);
+font-weight: 450;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="weightLabel">
+        <property name="text">
+         <string>Weight (Kg)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="weightInput">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(94, 92, 100);
+color: rgb(246, 245, 244);
+border: 1px solid  rgb(94, 92, 100);
+border-radius: 3px;
+height: 23px;
+padding-left: 3px;
+padding-right: 3px;</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="heightLabel">
+        <property name="text">
+         <string>Height (m)  </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="heightInput">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(94, 92, 100);
+color: rgb(246, 245, 244);
+border: 1px solid  rgb(94, 92, 100);
+border-radius: 3px;
+height: 23px;
+padding-left: 3px;
+padding-right: 3px;</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bmiCalculateBtn">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color: rgb(94, 92, 100);
+	border: 1px solid rgb(94, 92, 100);
+	border-radius: 3px;
+	height: 23px;
+	width: 80px;
+}
+QPushButton:hover
+{
+	
+	background-color: #0080ff;
+	color: white;
+	border: 1px solid #0080ff;
+	border-radius: 3px;
+	height: 23px;
+	width: 80px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Calculate</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
