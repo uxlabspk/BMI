@@ -20,8 +20,4 @@ void msg::setValues(QString value, QString status)
     ui->bmi_status->setText(status);
 }
 
-void msg::on_closeBtn_clicked()
-{
-    msg::close();
-}
 

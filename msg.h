@@ -16,8 +16,6 @@ public:
     ~msg();
 
     void setValues(QString value, QString status);
-private slots:
-    void on_closeBtn_clicked();
 
 private:
     Ui::msg *ui;
