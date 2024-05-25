@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>465</width>
-    <height>243</height>
+    <height>247</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <spacer name="horizontalSpacer_2">
+       <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -44,52 +44,7 @@
        </widget>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <item>
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="bmi_status">
-          <property name="styleSheet">
-           <string notr="true">font-size: 23px;
-margin: 5px;
-color: rgb(41, 130, 85);</string>
-          </property>
-          <property name="text">
-           <string>normal</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
+       <spacer name="horizontalSpacer_2">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -108,18 +63,43 @@ color: rgb(41, 130, 85);</string>
       <property name="topMargin">
        <number>0</number>
       </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
       <item>
-       <widget class="Line" name="line">
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
+       <spacer name="horizontalSpacer_5">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="bmi_status">
+        <property name="styleSheet">
+         <string notr="true">font-size: 23px;
+margin: 5px;
+color: rgb(41, 130, 85);</string>
+        </property>
+        <property name="text">
+         <string>normal</string>
+        </property>
        </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </item>
@@ -218,34 +198,7 @@ color: rgb(246, 97, 81);</string>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_6">
-      <item>
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
+     <layout class="QHBoxLayout" name="horizontalLayout_6"/>
     </item>
    </layout>
   </widget>
@@ -255,7 +208,7 @@ color: rgb(246, 97, 81);</string>
      <x>0</x>
      <y>0</y>
      <width>465</width>
-     <height>22</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

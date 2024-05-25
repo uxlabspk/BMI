@@ -16,31 +16,30 @@ bmi::~bmi()
 
 void bmi::on_bmiCalculateBtn_clicked()
 {
-    if (ui->weightInput->text().isEmpty() || ui->heightInput->text().isEmpty())
-    {
+    if (ui->weightInput->text().isEmpty() || ui->heightInput->text().isEmpty()) {
         QMessageBox::warning(this, "Error!", "Please enter a decimal or integer input.");
+        return;
     }
-    else
-    {
-        double weight = ui->weightInput->text().toDouble();
-        double height = ui->heightInput->text().toDouble();
 
-        double bmi = (weight / (height*height));
+    double weight = ui->weightInput->text().toDouble();
+    double height = ui->heightInput->text().toDouble();
 
-        QString status = "";
+    double bmi = ceil(weight / (height*height));
 
-        if (bmi > 0 && bmi < 18.5)
-            status = "Underweight";
+    QString status = "";
 
-        else if (bmi >= 18.5 && bmi < 25.0)
-            status = "Normal";
+    if (bmi > 0 && bmi < 18.5)
+        status = "Underweight";
 
-        if (bmi >= 25.0 && bmi <= 40.0)
-            status = "Overweight";
+    else if (bmi >= 18.5 && bmi < 25.0)
+        status = "Normal";
 
-        msgClass = new msg();
-        msgClass->setValues(QString::number(bmi), status);
-        msgClass->show();
-    }
+    else if (bmi >= 25.0 && bmi <= 40.0)
+        status = "Overweight";
+
+    msgClass = new msg();
+    msgClass->setValues(QString::number(bmi), status);
+    msgClass->show();
 }
+
 
