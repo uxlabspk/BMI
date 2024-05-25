@@ -24,7 +24,7 @@ void bmi::on_bmiCalculateBtn_clicked()
     double weight = ui->weightInput->text().toDouble();
     double height = ui->heightInput->text().toDouble();
 
-    double bmi = ceil(weight / (height*height));
+    double bmi = (weight / (height*height));
 
     QString status = "";
 
